@@ -1,3 +1,7 @@
+body{
+    background: white;
+    color: black;
+}
 #logo {
     height: 3rem;
     width: 3rem;
@@ -7,7 +11,7 @@
 #header {
     display: flex;
     align-items: center;
-    padding-left: 25%;    
+    padding-left: 31%;    
 
 }
 #search-container{
