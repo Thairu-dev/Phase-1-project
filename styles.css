@@ -1,0 +1,19 @@
+#logo {
+    height: 3rem;
+    width: 3rem;
+
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding-left: 25%;    
+
+}
+#search-container{
+    text-align: center;
+}
+#searchInput{
+    border-radius: 20px;
+
+}
