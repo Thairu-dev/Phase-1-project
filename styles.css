@@ -2,6 +2,21 @@ body{
     background: white;
     color: black;
 }
+
+#dark-mode-toggle-icon{
+    height: 1rem;
+
+}
+
+.dark *{
+    background-color: black;
+    color: white;
+    
+  }
+  .dark .dark-mode-toggle-icon{
+      content: url(./images/light-mode-toggle-icon.png);
+  }
+
 #logo {
     height: 3rem;
     width: 3rem;
@@ -10,8 +25,9 @@ body{
 
 #header {
     display: flex;
+    
     align-items: center;
-    padding-left: 31%;    
+    padding-left: 35%;    
 
 }
 #search-container{
@@ -20,4 +36,32 @@ body{
 #searchInput{
     border-radius: 20px;
 
+}
+
+#topbar {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#list ul li{
+    display: inline-block;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin: 10px 20px;
+}
+#list li a {
+    text-decoration: none;
+    
+    
+}
+button{
+    height: 2rem;
+    
+}
+
+#loginform {
+        text-align: center;
 }

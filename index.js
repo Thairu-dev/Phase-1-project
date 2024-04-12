@@ -1,6 +1,7 @@
 const searchInput = document.getElementById('searchInput');
-const searchButton = document.getElementById('searchButton');
+const input = document.querySelector('form');
 const results = document.getElementById('results');
+const likeButton =  document.getElementById('like-button')
 
 
 async function fetchData() {
@@ -31,9 +32,21 @@ function displayResults(data) {
 }
 
 
-searchButton.addEventListener('click', () => {
+input.addEventListener('submit', (e) => {
+  e.preventDefault()
   const query = searchInput.value;
   fetchData()
     .then(data => filterData(data, query))
     .then(data => displayResults(data));
 });
+
+const toggler = document.querySelector("#dark-mode-toggle-icon")
+ toggler.addEventListener('click', () =>{
+
+  if(!document.documentElement.classList.contains('dark')){
+    document.documentElement.classList.add('dark')
+    }else{
+      document.documentElement.classList.remove('dark')
+    }
+
+ })
